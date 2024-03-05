@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease;  
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: inherit;
+}
+
+.add_new_task {
+    width: 75%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    font-size: 15px;
+}
+
+.add_task {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #258328;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add_task:hover {
+    background-color: #6fd274;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 75%;
+    background-color: #ffffff;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: crimson;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .addtask {
+    background-color: #258328;
+}
+
+body.dark-mode .addtask:hover {
+    background-color: #6fd274;
+}
+
+body.dark-mode ul {
+    background-color: #555555;
+}
+
+body.dark-mode li {
+    background-color: #777777;
+    border: 1px solid #666666;
+}
+
+.light_dark_mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
